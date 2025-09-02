@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list website</title>
+    <style>
+        #list-container{
+            max-width: 1140px;
+            margin:  30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .list-card{
+            
+            text-align: center;
+            border: 1px solid pink;
+            border-radius: 15px;
+            box-shadow: 1px 1px 1px 1px gray;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <button>To do list</button>
+    <button onclick="loadToDo()">To do list</button>
     <h1>To do List</h1>
+    <div id="list-container">
+        <!-- <div class="list-card">
+            <p>id </p>
+            <h2>This title</h2>
+            <p>Task Completed: </p>
+        </div> -->
+    </div>
     <script src="todo.js"></script>
 </body>
 </html>
